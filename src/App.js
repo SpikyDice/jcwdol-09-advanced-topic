@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import LearnHOC from "./pages/LearnHOC";
 import Testing from "./pages/Testing";
@@ -12,9 +12,12 @@ function App() {
 
   return (
     <div className="App">
-      <StyleButton />
-      <Button />
-      <StyleText />
+      <div>
+        <StyleButton />
+        <Button />
+        <StyleText />
+        <Link to="/home">Home</Link>
+      </div>
       <Routes>
         <Route path="/" element={<LearnHOC />} />
         <Route path="/home" element={<Home />} />
