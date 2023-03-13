@@ -17,6 +17,7 @@ function App() {
         <Button />
         <StyleText />
         <Link to="/home">Home</Link>
+        <Link to="/testing">Testing</Link>
       </div>
       <Routes>
         <Route path="/" element={<LearnHOC />} />
